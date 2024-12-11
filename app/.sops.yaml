@@ -1,0 +1,5 @@
+creation_rules:
+  - gcp_kms: projects/tokyo-ceiling-435523-d0/locations/northamerica-northeast1/keyRings/my-keyring/cryptoKeys/key-one
+    # Specify any file patterns you want to auto-encrypt
+    path_regex: '.*\.yaml$'
+    encrypted_regex: '^(data)$'
